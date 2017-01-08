@@ -1,7 +1,7 @@
   <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="css/style.css">
-<script src="js/javascript.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <head>
 </head>
@@ -9,26 +9,34 @@
 <div class="container">
 <div class="inner-container">
   <label for="fname">Name</label>
-  <input type="text" id="name" name="name">
+  <input type="text" id="name" name="name" required>
   <label for="reg">Registration Number</label>
-  <input type="text" id="registration" name="registration">
+  <input type="text" id="registration" name="registration"  required>
   <label for="address">Address</label>
-  <input type="text" id="address" name="address">
+  <input type="text" id="address" name="address" >
   <label for="state">State</label>
-  <input type="text" id="state" name="state">
+  <select id="state">
+  <option  value="0">--Select State--</option>
+  </select>
   </div>
   <div class="inner-container">
   <label for="roll">Roll Number</label>
-  <input type="text" id="roll" name="roll">
+  <input type="text" id="roll" name="roll" >
   <label for="college">College</label>
   <input type="text" id="college" name="college">
   <label for="city">City</label>
   <input type="text" id="city" name="city">
   <label for="country">Country</label>
-  <input type="text" id="country" name="country">
+  <select id="country">
+  <option value="0">--Select Country--</option>
+  </select>
+
   </div>
   <button class="button button1" onclick="validateForm()">SUBMIT</button>
-<button class="button button2">ADD</button>
+<button class="button button2" onclick="addUser()">ADD</button>
 </div>
+
 </body>
 </html>
+<script src="js/javascript.js"></script>
+
