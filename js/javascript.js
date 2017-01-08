@@ -19,13 +19,13 @@
  
 
  	var reg=$("#registration").val();
- 	if(isNaN(reg)==true || reg==0 ){$("#registration").css("background","red");            $("#registration").val('please give a valid registration number');}
+ 	if(isNaN(reg)==true || reg==0 || reg.length!=10){$("#registration").css("background","red");            $("#registration").val('please give a valid registration number');}
 
  	var adrs=$("#address").val();
  	if(isNaN(adrs)==false || adrs==0 ){$("#address").css("background","red");          $("#address").val('please give a valid address');}
 
  	var roll=$("#roll").val();
-    if(isNaN(roll)==true || roll==0){$("#roll").css("background","red"); $("#roll").val('please give a valid roll number');}
+    if(isNaN(roll)==true || roll==0 || roll.length!=5){$("#roll").css("background","red"); $("#roll").val('please give a valid roll number');}
 
     var city=$("#city").val();
     if(isNaN(city)==false || city==0){$("#city").css("background","red"); $("#city").val('please give a valid city name');}
